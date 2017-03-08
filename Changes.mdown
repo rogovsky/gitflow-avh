@@ -28,8 +28,17 @@
 
 # Changelog
 
-#### 1.11.0-dev.1
-* Preparation for new development cycle.
+#### 1.11.0-dev.3
+[Peter van der Does][petervanderdoes]
+* Bugfix: Problems when using fetch.prune
+
+#### 1.10.2
+[Peter van der Does][petervanderdoes]
+* Bugfix: Error finishing a release.
+
+#### 1.10.1
+[Peter van der Does][petervanderdoes]
+* Bugfix: flag short name (p) already defined
 
 #### 1.10.0
 [Peter van der Does][petervanderdoes]

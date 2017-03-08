@@ -254,7 +254,7 @@ git_fetch_branch() {
 	origin="$1"
 	branch="$2"
 	if git_remote_branch_exists "$origin/$branch"; then
-		git_do fetch -q "$origin" "$branch":refs/remotes/"$origin"/"$branch" || die "Could not fetch $branch from $origin."
+		git_do fetch -q "$origin" "$branch" || die "Could not fetch $branch from $origin."
 	else
 		warn "Trying to fetch branch '$origin/$branch' but it does not exist."
 	fi
@@ -342,7 +342,7 @@ gitflow_resolve_nameprefix() {
 	num_matches=$(echo "$matches" | wc -l)
 	if [ -z "$matches" ]; then
 		# no prefix match, so take it literally
-		warn "No branch matches prefix '$name'"
+		warn "No branches match '$prefix$name*'"
 		return 1
 	else
 		if [ $num_matches -eq 1 ]; then
