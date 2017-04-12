@@ -163,8 +163,10 @@ git_remote_branch_delete() {
 	[ -n "$1" ] || die "Missing branch name"
 	if git_remote_branch_exists "$ORIGIN/$1"; then
 		git_do push "$ORIGIN" :"$1" || die "Could not delete the remote $1 in $ORIGIN."
+		return 0
 	else
 		warn "Trying to delete the remote branch $1, but it does not exists in $ORIGIN"
+		return 1
 	fi
 }
 
@@ -178,6 +180,13 @@ git_tag_exists() {
 	[ -n "$(git for-each-ref --format='%(refname:short)' refs/tags/$1)" ]
 }
 
+git_config_bool_exists() {
+	local value
+
+	[ -n "$1" ] || die "Missing config option"
+	value=$(git config --get --bool $1)
+	[ "$value" = "true" ]
+}
 #
 # git_compare_refs()
 #
