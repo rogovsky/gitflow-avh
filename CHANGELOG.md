@@ -9,6 +9,7 @@
 [craigfowler]: https://github.com/craigfowler
 [cyberbob]: https://github.com/cyberbob
 [floga]: https://github.com/FloGa
+[gpongelli]: https://github.com/gpongelli
 [gvangool]: https://github.com/gvangool
 [havvg]: https://github.com/havvg
 [jebmeier]: https://github.com/jebmeier
@@ -21,15 +22,45 @@
 [merelyapseudonym]: https://github.com/MerelyAPseudonym
 [mykehsd]: https://github.com/mykehsd
 [OpherV]: https://github.com/OpherV
+[Oppodelldog]: https://github.com/Oppodelldog
 [pcragone]: https://github.com/pcragone
+[Shoozza]: https://github.com/Shoozza
 [shpoont]: https://github.com/shpoont
 [shpoont]: https://github.com/shpoont
 [sinbad]: https://github.com/sinbad
 [sirn]: https://github.com/sirn
+[zheeeng]: https://github.com/zheeeng
+[mayerc-MSFT]: https://github.com/mayerc-MSFT
+[stevemao]: https://github.com/stevemao
+[gpongelli]: https://github.com/gpongelli
 
 # Changelog
 
-#### 1.11.0-dev.29
+#### 1.11.1-dev.21
+[Peter van der Does][petervanderdoes]
+* Bugfix: Remove inconsistency when pre_hook fails (Thanks [Gabriele Pongelli][gpongelli])
+* Fix indentation in README.md (Thanks [Shoozza][Shoozza])
+
+
+[Andreas Heiduk][asheiduk]
+* Bugfix: Unexpected operator.
+
+[zheeeng][zheeeng]
+* Enhancement: Review your commits more easier on figuring out what this feature/bugfix added exactly.
+
+[Oppodelldog][Oppodelldog]
+* Enhancement: Allows to install a specific version of git-flow when using the `gitflow-installer.sh` script
+
+[mayerc][mayerc-MSFT]
+* Enhancement: Add option that will not allow the a merge back into the develop branch.
+
+[Steve Mao][stevemao]
+* Fix: Standarize the README markdown.
+
+[Gabriele Pongelli][gpongelli]
+* Enhancement: Also use core.hooksPath for suggestion for the hook path during initialization.
+
+#### 1.11.0
 [Peter van der Does][petervanderdoes]
 * Bugfix: Problems when using fetch.prune
 * Bugfix: Errors when initializing git flow and useconfigonly is set but the name and/or email has not been set.
